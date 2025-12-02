@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Yekta Roustaei</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+    <div class="page">
+        <main class="shell">
+            <label for="theme-toggle" class="theme-switch">
+                <span class="sr-only">Toggle between dark and light themes</span>
+            </label>
+            <header>
+                <h1>Yekta Roustaei</h1>
+                <nav class="social" aria-label="social links">
+                    <a href="https://github.com/YektaRoustaei" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yekta-roustaei/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </nav>
+                <nav class="pages" aria-label="primary">
+                    <a href="index.html#home">Home</a>
+                    <a href="blog.html" aria-current="page">Blog</a>
+                    <a href="cv.html">CV</a>
+                </nav>
+            </header>
+
+            <section class="intro">
+                <p>Short reflections on model stability, ML ops, and thoughtfully shipping intelligent systems without losing the human side.</p>
+            </section>
+
+            <section id="blog" aria-labelledby="blog-heading">
+                <h2 id="blog-heading">Latest Writing</h2>
+                <article>
+                    <h3>Stability in ML Systems</h3>
+                    <p>A quick dive into the guardrails I use to keep real-time inferencing reliable across environments. Spoiler: small observability wins stack up.</p>
+                    <p><a href="#">Read the full note →</a></p>
+                </article>
+                <article>
+                    <h3>Notes on Ethical Deployment</h3>
+                    <p>Thoughts from a recent rollout that balanced personalization with privacy. Includes a lightweight checklist for conversations with product and legal.</p>
+                    <p><a href="#">Read the full note →</a></p>
+                </article>
+                <article>
+                    <h3>Operationalizing Research</h3>
+                    <p>How I translate exploratory notebooks into hardened services with versioned data, canary deploys, and transparent rollback plans.</p>
+                    <p><a href="#">Read the full note →</a></p>
+                </article>
+            </section>
+
+            <section class="contact" aria-labelledby="contact">
+                <h2 id="contact">Contact</h2>
+                <p>Send topic ideas or collaboration requests to <a href="mailto:yektaroustaei@gmail.com">yektaroustaei@gmail.com</a>.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
