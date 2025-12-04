@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend test coverage — Yekta Roustaei</title>
+    <link rel="stylesheet" href="project-tide.css" />
+</head>
+<body>
+    <main class="page">
+        <div class="wrap">
+            <header class="page-header">
+                <p class="tag">Testing &amp; quality</p>
+                <h1>Frontend test coverage</h1>
+                <p class="lead">
+                    This page shows the coverage report for a Next.js + TypeScript feature I worked on.
+                    The goal was to make changes safe to ship by relying on strong automated tests rather
+                    than manual checks.
+                </p>
+            </header>
+
+            <section class="layout">
+                <figure class="panel panel-image">
+                    <img
+                        src="images/testcoverage.jpeg"
+                        alt="Coverage report showing high percentages across statements, branches, functions, and lines"
+                    />
+                    <figcaption class="caption">
+                        Coverage summary for a production feature module.
+                    </figcaption>
+                </figure>
+
+                <article class="panel panel-text">
+                    <h2>Coverage snapshot</h2>
+                    <p>
+                        Every pull request must keep coverage above the guardrails below. The dashboard lives in a Next.js monorepo,
+                        so enforcing this baseline protects dozens of shared components and hooks.
+                    </p>
+
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <p class="stat-label">Statements</p>
+                            <p class="stat-value">97.9%</p>
+                        </div>
+                        <div class="stat-card">
+                            <p class="stat-label">Branches</p>
+                            <p class="stat-value">91.3%</p>
+                        </div>
+                        <div class="stat-card">
+                            <p class="stat-label">Functions</p>
+                            <p class="stat-value">91.2%</p>
+                        </div>
+                        <div class="stat-card">
+                            <p class="stat-label">Lines</p>
+                            <p class="stat-value">97.9%</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        These numbers mean almost every branch—loading, empty, slow, error—is executed by automated tests before a release.
+                    </p>
+
+                    <h3>How I enforce it</h3>
+                    <ul>
+                        <li>Unit tests for shared utilities, selectors, and hooks using Jest + ts-jest.</li>
+                        <li>Component tests with React Testing Library to lock down pagination, filters, and debounced search.</li>
+                        <li>MSW API mocks stress slow responses, 500s, and malformed JSON so the UI never regresses on edge cases.</li>
+                        <li>GitHub Actions blocks merges when coverage drops and leaves inline summaries on each PR.</li>
+                        <li>Nightly Playwright smoke suite runs against preview builds to catch real-browser issues.</li>
+                    </ul>
+
+                    <div class="callout">
+                        <p>Command used locally: <code>npx jest --runInBand --coverage --coverageThreshold '{ "global": { "statements": 0.95, "branches": 0.85 } }'</code></p>
+                    </div>
+
+                    <h3>Impact</h3>
+                    <ul>
+                        <li>Refactors of the reporting table shipped with zero regressions across six releases.</li>
+                        <li>Coverage gate prevented three bugs from reaching production within the first month.</li>
+                        <li>New engineers can ship confidently because baseline scenarios are already codified.</li>
+                    </ul>
+
+                    <a class="back-link" href="index.html">← Back to portfolio</a>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloomly Coaching Dashboard — Yekta Roustaei</title>
+    <title>CSV Import Tool — Yekta Roustaei</title>
     <link rel="stylesheet" href="project-bloomly.css">
 </head>
 <body>
     <main class="wrap">
         <header>
             <p class="tag">Case study</p>
-            <h1>Bloomly Coaching Dashboard</h1>
-            <p>React + TypeScript dashboard where I owned the architecture, integrations, and rollout. The CRM now handles 4x more sessions per coach with zero manual exports.</p>
+            <h1>CSV Import & Validation Workflow</h1>
+            <p>The UI walks users through four visual steps: CSV1 shows the drag/drop upload with size guardrails, CSV2 highlights mapping (template vs manual), CSV3 surfaces validation with duplicates flagged, and CSV4 reflects finalized portfolio dashboards. End to end it’s ~16k lines of React/TypeScript covering upload logic, mapping state machines, validation orchestration, WebSocket streams, accessibility work, and Storybook docs.</p>
         </header>
 
         <div class="grid">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Bloomly dashboard screens">
+            <div class="gallery">
+                <img src="images/CSV1.png" alt="CSV upload step">
+                <img src="images/CSV2.png" alt="Mapping CSV columns to system fields">
+                <img src="images/CSV3.png" alt="Validation summary with duplicates flagged">
+                <img src="images/CSV4.png" alt="Finalized dataset dashboard with tour guide overlays highlighting panels">
+            </div>
             <div class="card">
                 <h2>What I built</h2>
                 <ul>
-                    <li>Implemented the dashboard shell in React + TypeScript with SSR, theme tokens, and full keyboard navigation.</li>
-                    <li>Built WebSocket ingestion services and D3 charts so coaches see session KPIs within 500ms of change.</li>
-                    <li>Shipped CSV import/export tooling that reduced onboarding time per studio from days to under an hour.</li>
-                    <li>Documented components and analytics contracts in Storybook + Notion to unblock the internal dev team.</li>
+                    <li>Implemented the shell in React + TypeScript with SSR, keyboard navigation, “no data uploaded yet” states, and an interactive tour guide so new users understand each step without support.</li>
+                    <li>Step 1 (CSV1) handles drag/drop or browse uploads up to 10MB, streams progress, enforces retries, and blocks unsupported formats before ingestion.</li>
+                    <li>Step 2 (CSV2) runs the mapping engine with reusable templates, manual overrides, live match/completeness %, and warnings when required fields are unmapped or mismatched.</li>
+                    <li>Step 3 (CSV3) renders validation via WebSocket updates—duplicate detection, row-to-row comparison panes (submission vs verified), and per-record fix/ignore buttons that sync instantly.</li>
+                    <li>Step 4 (CSV4) finalizes the dataset into a portfolio with widgets for passed/failed/duplicate/needs-review counts, tagging, audit logs, and a built-in tour overlay highlighting each panel.</li>
+                    <li>Documented every endpoint, widget, and failure mode in Storybook and runbooks so other teams can run imports without engineering support.</li>
                 </ul>
                 <a class="back-link" href="index.html">← Back to portfolio</a>
             </div>

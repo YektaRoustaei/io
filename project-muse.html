@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muse Habit App — Yekta Roustaei</title>
+    <title>Nutrient ML Study — Yekta Roustaei</title>
     <link rel="stylesheet" href="project-muse.css">
 </head>
 <body>
     <main class="wrap">
         <header>
-            <p class="tag">Mobile experience</p>
-            <h1>Muse Habit App</h1>
-            <p>React Native habit companion where I owned the codebase structure, offline data model, and release pipeline. Target was sub-2s cold starts on devices as old as iPhone 8.</p>
+            <p class="tag">ML nutrition</p>
+            <h1>Nutrient ML Study</h1>
+            <p>Prototype that predicts nutrient deficiencies and delivers personalised nutrition recommendations using the NHANES 2013–2014 dataset.</p>
         </header>
 
         <div class="grid">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Muse habit app screens">
+            <img src="images/nutient.png" alt="NHANES dataset visualisation">
             <div class="card">
                 <h2>What I built</h2>
                 <ul>
-                    <li>Designed a component kit in React Native + TypeScript with strict prop typing so feature squads stopped duplicating UI.</li>
-                    <li>Built offline-first streak/reminder logic with SQLite caching and delta sync via REST, keeping data drift under 0.5%.</li>
-                    <li>Instrumented performance traces and trimmed bundle weight by 35%, cutting cold start to 1.6s on low-end hardware.</li>
-                    <li>Set up release channels with CodePush + Detox tests so non-breaking UI tweaks could ship daily.</li>
+                    <li>Trained XGBoost classifiers (Python, Pandas, mutual_info, SHAP) to predict deficiencies such as vitamin B12 and flag at least two health risks using NHANES 2013–2014.</li>
+                    <li>Built a FastAPI backend with documented Swagger endpoints so the frontend could request risk scores, top contributing features, and evidence-based recommendations.</li>
+                    <li>Stored SHAP explanations as .pkl artifacts and exported reporting via matplotlib/seaborn for medical review.</li>
+                    <li>Developed a Next.js/React frontend styled with Tailwind-inspired utilities and custom components (RiskGauge, FeatureImportance, DietaryValidationCard) plus lucide-react icons.</li>
+                    <li>Used an Axios-like service to connect the UI to the FastAPI backend, letting users input their profile data and receive personalised predictions.</li>
                 </ul>
                 <a class="back-link" href="index.html">← Back to portfolio</a>
             </div>
