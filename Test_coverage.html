@@ -20,7 +20,7 @@
             <div class="hero-copy">
                 <p class="eyebrow">Testing and quality</p>
                 <h1>Software Test Coverage</h1>
-                <p>This case study shows how I use automated coverage thresholds, component tests, and smoke tests to keep frontend changes safe to ship in a production TypeScript codebase.</p>
+                <p>This case study shows how I use automated coverage thresholds, component tests, and smoke tests to keep application changes safe to ship in a production TypeScript codebase.</p>
             </div>
             <div class="hero-facts">
                 <div class="fact-card">
@@ -41,13 +41,13 @@
         <section class="section-grid">
             <figure class="media-panel">
                 <img src="images/testcoverage.jpeg" alt="Coverage report showing high percentages across statements, branches, functions, and lines">
-                <figcaption class="caption">Coverage reporting acted as a release guardrail for shared components, hooks, and table flows.</figcaption>
+                <figcaption class="caption">Coverage reporting acted as a release guardrail for shared modules, hooks, and critical workflow logic.</figcaption>
             </figure>
             <article class="summary-card">
                 <h2>How I enforce it</h2>
                 <ul>
                     <li>Unit tests for utilities, selectors, and hooks using Jest and ts-jest.</li>
-                    <li>Component tests for pagination, filters, and debounced search with React Testing Library.</li>
+                    <li>Workflow and component tests for pagination, filters, and debounced search with React Testing Library.</li>
                     <li>MSW-backed API mocks for slow responses, malformed data, and failure states.</li>
                     <li>GitHub Actions checks that block merges when coverage drops below agreed thresholds.</li>
                     <li>Nightly Playwright smoke tests against preview deployments.</li>
