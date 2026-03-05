@@ -3,80 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More About Yekta — Software Engineer</title>
+    <title>More About Yekta - Software Engineer</title>
     <link rel="stylesheet" href="about-more.css">
 </head>
 <body>
-    <main class="wrap">
-        <a class="back-link top-link" href="index.html">← Back to portfolio</a>
-        <header>
-            <p class="tag">More about Yekta</p>
-            <h1>Senior software engineer focused on predictable delivery.</h1>
-            <p>I own React/Next.js architecture, data contracts, and testing strategy for products that can’t afford regressions.</p>
-            <p>My day-to-day is TypeScript builds, API integrations, and performance audits backed by real metrics.</p>
-            <p>Based in 🇬🇧 United Kingdom, I’m usually pairing with engineers, reviewing PRs, or automating another check into CI.</p>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Primary">
+            <a class="back-link" href="index.html">Back to portfolio</a>
+            <div class="top-links">
+                <a href="blog.html">Writing</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+
+        <header class="hero-card">
+            <p class="eyebrow">More about Yekta</p>
+            <h1>Senior software engineer focused on product clarity, delivery discipline, and dependable systems.</h1>
+            <p class="lead">I work across frontend architecture, APIs, analytics, and testing strategy. Most of my work lives where complex product logic needs to become something stable, explainable, and easy to use.</p>
         </header>
 
-        <section class="grid">
-            <img src="images/Yekta2.jpeg" alt="Yekta Roustaei working with sketches">
-            <div class="card">
-                <h2>About Me</h2>
-                <p>I’ve led software initiatives in small teams where a single release can impact thousands of users. I design the architecture, implement core flows, and set the guardrails that keep velocity high.</p>
-                <p>Expect thorough code reviews, measurable targets, and documentation that makes handoffs painless.</p>
-                <h3>How I operate</h3>
-                <ul class="values-list">
-                    <li>• Direct user feedback loops tied to analytics dashboards.</li>
-                    <li>• Shared component libraries with versioning and upgrade paths.</li>
-                    <li>• Non-negotiable accessibility and performance budgets.</li>
-                    <li>• Async updates with clear owners and next steps.</li>
+        <section class="intro-grid">
+            <figure class="photo-card">
+                <img src="images/Yekta2.jpeg" alt="Yekta Roustaei working with sketches">
+            </figure>
+            <article class="content-card">
+                <h2>How I work</h2>
+                <p>I enjoy environments where product, engineering, and data all intersect. That usually means pairing with engineers, shaping interfaces with product teams, and setting the quality bar early so releases stay predictable later.</p>
+                <p>I care about structured delivery, accessible interfaces, and codebases that other people can actually work in after launch.</p>
+                <ul class="chip-list">
+                    <li>Frontend architecture</li>
+                    <li>API contracts</li>
+                    <li>Analytics dashboards</li>
+                    <li>Testing strategy</li>
+                    <li>Performance work</li>
+                    <li>ML-backed product flows</li>
                 </ul>
-            </div>
+            </article>
         </section>
 
-        <section class="section-block">
-            <h2>💼 Experience</h2>
+        <section class="section-card">
+            <div class="section-head">
+                <p class="eyebrow">Experience</p>
+                <h2>Recent roles</h2>
+            </div>
             <div class="timeline">
                 <article class="timeline-item">
                     <div class="timeline-head">
-                        <p class="timeline-title">🚀 AmBue Group — Senior Software Developer</p>
-                        <span class="timeline-meta">Nov 2024 – Present · 🇬🇧 United Kingdom / Hybrid</span>
+                        <h3>AmBue Group</h3>
+                        <span>Nov 2024 - Present</span>
                     </div>
-                    <p>Promoted from Software Developer to lead the delivery, architecture, and lifecycle of an LLM-powered retrofit recommendation platform.</p>
-                    <ul class="detail-list">
-                        <li>Manage and govern core APIs across performance, documentation, versioning, and security standards.</li>
-                        <li>Translate stakeholder requirements into prioritised feature roadmaps and coordinate AI/ML, data, product, and engineering partners.</li>
-                        <li>Design ML pipelines on GCP, automating Random Forest training and batch prediction with Python + scikit-learn stored in Cloud SQL.</li>
-                        <li>Deploy Cloud Functions to orchestrate daily training/prediction runs and keep datasets reliable.</li>
-                        <li>Architect Next.js applications with 90%+ coverage while steering CI/CD automation and migrations to Python.</li>
+                    <p class="role">Senior Software Developer · United Kingdom / Hybrid</p>
+                    <p>Leading delivery and architecture for an LLM-powered retrofit recommendation platform, with ownership across product implementation, core APIs, and quality controls.</p>
+                    <ul>
+                        <li>Architect Next.js applications with strong test coverage and release guardrails.</li>
+                        <li>Design ML pipelines on GCP using Python and scikit-learn with Cloud SQL-backed data flows.</li>
+                        <li>Coordinate product, data, AI/ML, and engineering partners around clear technical roadmaps.</li>
                     </ul>
                 </article>
                 <article class="timeline-item">
                     <div class="timeline-head">
-                        <p class="timeline-title">🌱 Douran Group — Software Engineer</p>
-                        <span class="timeline-meta">Apr 2022 – Aug 2023 · Remote</span>
+                        <h3>Douran Group</h3>
+                        <span>Apr 2022 - Aug 2023</span>
                     </div>
-                    <p>Technical lead for multiple Vue + Laravel products.</p>
-                    <ul class="detail-list">
-                        <li>Refactored Vue screens, dropping largest contentful paint from 3.8s to 1.9s across core flows.</li>
-                        <li>Extended Laravel APIs with Redis caching and schema docs used by four downstream teams.</li>
-                        <li>Introduced Docker + Make onboarding, cutting setup time from days to under one hour.</li>
-                        <li>Added Playwright smoke suites and coverage reports that halved production hotfixes quarter over quarter.</li>
+                    <p class="role">Software Engineer · Remote</p>
+                    <p>Worked as a technical lead across Vue and Laravel products, improving performance, developer experience, and API stability.</p>
+                    <ul>
+                        <li>Reduced frontend performance bottlenecks across key user flows.</li>
+                        <li>Expanded and documented backend APIs used by multiple downstream teams.</li>
+                        <li>Introduced stronger setup automation and broader test coverage.</li>
                     </ul>
                 </article>
             </div>
         </section>
 
-        <section class="section-block">
-            <h2>🎓 Education</h2>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-head">
-                        <p class="timeline-title">MSc Software Engineering — University of Leicester (Distinction)</p>
-                        <span class="timeline-meta">2023 – 2024 · Leicester, UK</span>
-                    </div>
-                    <p>Focused on advanced web technologies, software quality, and ML systems. Final projects included a Laravel + React recommendation engine and a serverless campus-monitoring prototype.</p>
-                </article>
-            </div>
+        <section class="dual-grid">
+            <article class="section-card compact">
+                <div class="section-head">
+                    <p class="eyebrow">Education</p>
+                    <h2>Academic background</h2>
+                </div>
+                <p><strong>MSc Software Engineering</strong><br>University of Leicester, Distinction</p>
+                <p>Focused on advanced web technologies, software quality, and ML systems.</p>
+            </article>
+            <article class="section-card compact">
+                <div class="section-head">
+                    <p class="eyebrow">Working style</p>
+                    <h2>What teams get from me</h2>
+                </div>
+                <ul>
+                    <li>Clear technical ownership and pragmatic delivery decisions.</li>
+                    <li>Documentation and reviews that reduce ambiguity.</li>
+                    <li>Attention to performance, accessibility, and maintainability.</li>
+                    <li>Product thinking grounded in evidence, not hand-waving.</li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>

@@ -1,89 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software test coverage — Yekta Roustaei</title>
-    <link rel="stylesheet" href="project-tide.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Test Coverage - Yekta Roustaei</title>
+    <link rel="stylesheet" href="project-detail.css">
 </head>
 <body>
-    <main class="page">
-        <div class="wrap">
-            <header class="page-header">
-                <p class="tag">Testing &amp; quality</p>
-                <h1>Software test coverage</h1>
-                <p class="lead">
-                    This page shows the coverage report for a Next.js + TypeScript feature I worked on.
-                    The goal was to make changes safe to ship by relying on strong automated tests rather
-                    than manual checks.
-                </p>
-            </header>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Primary">
+            <a href="index.html">Back to portfolio</a>
+            <div class="top-links">
+                <a href="about-more.html">About</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
 
-            <section class="layout">
-                <figure class="panel panel-image">
-                    <img
-                        src="images/testcoverage.jpeg"
-                        alt="Coverage report showing high percentages across statements, branches, functions, and lines"
-                    />
-                    <figcaption class="caption">
-                        Coverage summary for a production feature module.
-                    </figcaption>
-                </figure>
+        <header class="hero-card">
+            <div class="hero-copy">
+                <p class="eyebrow">Testing and quality</p>
+                <h1>Software Test Coverage</h1>
+                <p>This case study shows how I use automated coverage thresholds, component tests, and smoke tests to keep frontend changes safe to ship in a production TypeScript codebase.</p>
+            </div>
+            <div class="hero-facts">
+                <div class="fact-card">
+                    <span class="fact-label">Statements</span>
+                    <strong>97.9%</strong>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-label">Branches</span>
+                    <strong>91.3%</strong>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-label">Lines</span>
+                    <strong>97.9%</strong>
+                </div>
+            </div>
+        </header>
 
-                <article class="panel panel-text">
-                    <h2>Coverage snapshot</h2>
-                    <p>
-                        Every pull request must keep coverage above the guardrails below. The dashboard lives in a Next.js monorepo,
-                        so enforcing this baseline protects dozens of shared components and hooks.
-                    </p>
+        <section class="section-grid">
+            <figure class="media-panel">
+                <img src="images/testcoverage.jpeg" alt="Coverage report showing high percentages across statements, branches, functions, and lines">
+                <figcaption class="caption">Coverage reporting acted as a release guardrail for shared components, hooks, and table flows.</figcaption>
+            </figure>
+            <article class="summary-card">
+                <h2>How I enforce it</h2>
+                <ul>
+                    <li>Unit tests for utilities, selectors, and hooks using Jest and ts-jest.</li>
+                    <li>Component tests for pagination, filters, and debounced search with React Testing Library.</li>
+                    <li>MSW-backed API mocks for slow responses, malformed data, and failure states.</li>
+                    <li>GitHub Actions checks that block merges when coverage drops below agreed thresholds.</li>
+                    <li>Nightly Playwright smoke tests against preview deployments.</li>
+                </ul>
+                <a class="back-link" href="index.html">Back to portfolio</a>
+            </article>
+        </section>
 
-                    <div class="stat-grid">
-                        <div class="stat-card">
-                            <p class="stat-label">Statements</p>
-                            <p class="stat-value">97.9%</p>
-                        </div>
-                        <div class="stat-card">
-                            <p class="stat-label">Branches</p>
-                            <p class="stat-value">91.3%</p>
-                        </div>
-                        <div class="stat-card">
-                            <p class="stat-label">Functions</p>
-                            <p class="stat-value">91.2%</p>
-                        </div>
-                        <div class="stat-card">
-                            <p class="stat-label">Lines</p>
-                            <p class="stat-value">97.9%</p>
-                        </div>
-                    </div>
-
-                    <p>
-                        These numbers mean almost every branch—loading, empty, slow, error—is executed by automated tests before a release.
-                    </p>
-
-                    <h3>How I enforce it</h3>
-                    <ul>
-                        <li>Unit tests for shared utilities, selectors, and hooks using Jest + ts-jest.</li>
-                        <li>Component tests with React Testing Library to lock down pagination, filters, and debounced search.</li>
-                        <li>MSW API mocks stress slow responses, 500s, and malformed JSON so the UI never regresses on edge cases.</li>
-                        <li>GitHub Actions blocks merges when coverage drops and leaves inline summaries on each PR.</li>
-                        <li>Nightly Playwright smoke suite runs against preview builds to catch real-browser issues.</li>
-                    </ul>
-
-                    <div class="callout">
-                        <p>Command used locally: <code>npx jest --runInBand --coverage --coverageThreshold '{ "global": { "statements": 0.95, "branches": 0.85 } }'</code></p>
-                    </div>
-
-                    <h3>Impact</h3>
-                    <ul>
-                        <li>Refactors of the reporting table shipped with zero regressions across six releases.</li>
-                        <li>Coverage gate prevented three bugs from reaching production within the first month.</li>
-                        <li>New engineers can ship confidently because baseline scenarios are already codified.</li>
-                    </ul>
-
-                    <a class="back-link" href="index.html">← Back to portfolio</a>
-                </article>
-            </section>
-        </div>
+        <section class="metrics-grid">
+            <article class="metric-card">
+                <span class="fact-label">Statements</span>
+                <span class="metric-value">97.9%</span>
+                <p>Almost every logic path is executed before release.</p>
+            </article>
+            <article class="metric-card">
+                <span class="fact-label">Branches</span>
+                <span class="metric-value">91.3%</span>
+                <p>Loading, empty, slow, and error states are tested deliberately.</p>
+            </article>
+            <article class="metric-card">
+                <span class="fact-label">Functions</span>
+                <span class="metric-value">91.2%</span>
+                <p>Behavioral regressions are harder to hide inside helpers and hooks.</p>
+            </article>
+            <article class="metric-card">
+                <span class="fact-label">Lines</span>
+                <span class="metric-value">97.9%</span>
+                <p>Refactors can ship with much stronger confidence.</p>
+            </article>
+        </section>
     </main>
 </body>
 </html>

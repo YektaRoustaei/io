@@ -8,88 +8,139 @@
 </head>
 <body>
     <main class="page">
-        <header>
-            <p class="hero-tag">Software engineer</p>
-            <h1>Hi, I’m Yekta — a software engineer focused on clean interfaces and practical engineering.</h1>
-            <p class="hero-sub">I build React and Next.js applications in TypeScript and I care about the kind of UI that stays calm, accessible, and easy to use.</p>
-            <p class="hero-sub">Based in 🇬🇧 United Kingdom. Always learning, always building.</p>
-            <button class="btn" data-modal-open>Get in touch</button>
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="index.html">Yekta Roustaei</a>
+            <div class="nav-links">
+                <a href="about-more.html">About</a>
+                <a href="blog.html">Writing</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="hero-tag">Software engineer</p>
+                <h1>Building product interfaces that stay sharp under real engineering pressure.</h1>
+                <p class="hero-sub">I work across React, Next.js, TypeScript, Python, APIs, and ML-backed workflows. The goal is simple: make complex systems feel clear, reliable, and ready to ship.</p>
+                <div class="hero-actions">
+                    <button class="btn" data-modal-open>Get in touch</button>
+                    <a class="btn btn-secondary" href="#recent-work">View projects</a>
+                </div>
+            </div>
+            <aside class="hero-panel" aria-label="Highlights">
+                <div class="hero-stat">
+                    <span>Focus</span>
+                    <strong>Frontend systems, APIs, testing, analytics</strong>
+                </div>
+                <div class="hero-stat">
+                    <span>Stack</span>
+                    <strong>React, Next.js, TypeScript, Python, SQL, GCP</strong>
+                </div>
+                <div class="hero-stat">
+                    <span>Based in</span>
+                    <strong>United Kingdom</strong>
+                </div>
+            </aside>
         </header>
 
-        <section>
-            <h2>What I do</h2>
+        <section class="section section-spotlight">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="section-kicker">What I do</p>
+                    <h2>Engineering that balances speed, structure, and polish.</h2>
+                </div>
+                <p class="section-note">I care about calm interfaces, dependable data flows, and product decisions grounded in evidence instead of guesswork.</p>
+            </div>
             <div class="services-grid">
-                <article class="service-card">
-                    <div class="service-icon peach">✦</div>
-                    <h3>Product Development</h3>
-                    <p>I build software features end-to-end, from UI to backend, until they work in real life.</p>
+                <article class="service-card accent-peach">
+                    <div class="service-icon">01</div>
+                    <h3>Product Delivery</h3>
+                    <p>I take features from concept to shipped workflow, closing the gap between design intent and production behavior.</p>
                 </article>
-                <article class="service-card">
-                    <div class="service-icon mint">⌘</div>
-                    <h3>Web Applications</h3>
-                    <p>I work with React/Next.js and TypeScript to create interfaces that stay stable as projects grow.</p>
+                <article class="service-card accent-sky">
+                    <div class="service-icon">02</div>
+                    <h3>Frontend Systems</h3>
+                    <p>I build React and Next.js interfaces that hold up under growth, reuse, and hard product constraints.</p>
                 </article>
-                <article class="service-card">
-                    <div class="service-icon turquoise">⚡</div>
-                    <h3>Backend Logic</h3>
-                    <p>I build Python backend features, handle data flows, and make APIs dependable.</p>
+                <article class="service-card accent-mint">
+                    <div class="service-icon">03</div>
+                    <h3>Backend and APIs</h3>
+                    <p>I design contracts, data handling, and integrations so the UI can stay stable even when systems get messy.</p>
                 </article>
-                <article class="service-card">
-                    <div class="service-icon lavender">☼</div>
-                    <h3>Data & APIs</h3>
-                    <p>I connect services, manage edge cases, and keep information consistent on screen.</p>
-                </article>
-                <article class="service-card">
-                    <div class="service-icon soft">∞</div>
-                    <h3>Performance</h3>
-                    <p>I find bottlenecks, reduce load times, and keep the product fast for real users.</p>
+                <article class="service-card accent-sand">
+                    <div class="service-icon">04</div>
+                    <h3>Analytics and ML</h3>
+                    <p>I work with model outputs, dashboards, and analysis pipelines to turn raw signals into practical decisions.</p>
                 </article>
             </div>
         </section>
 
-
-        <section class="about">
-            <figure>
+        <section class="about-panel">
+            <figure class="portrait-frame">
                 <img class="portrait" src="images/yekta.JPG" alt="Portrait of Yekta Roustaei smiling">
             </figure>
-            <div>
-                <h2>About me</h2>
-                <p>I’m a software engineer who likes turning complex ideas into simple, usable interfaces.</p>
-                <p>My favorite tools are React, Next.js, and TypeScript.</p>
-                <p>I also work closely with ML outputs, API and SQL database design, and Python-based analysis (Pandas, scikit-learn) to keep features trustworthy.</p>
-                <p>I enjoy designing component systems, collaborating with product teams, and improving performance in small, practical steps.</p>
-                <p>When I’m not coding, I explore photography or experiment with design ideas.</p>
-                <a class="btn" href="about-more.html">Discover more</a>
+            <div class="about-copy">
+                <p class="section-kicker">About me</p>
+                <h2>I like turning complicated workflows into products people can actually trust.</h2>
+                <p>I enjoy building the layers between interface, API, and analysis so teams can move faster without losing quality. My strongest tools are React, Next.js, TypeScript, Python, and data-oriented product thinking.</p>
+                <p>Most of my work sits at the point where product detail matters: validation flows, metrics dashboards, API reliability, test coverage, and UI decisions that make dense information easier to use.</p>
+                <a class="btn btn-secondary" href="about-more.html">Read more</a>
             </div>
         </section>
 
-        <section>
-            <div class="section-heading">
-                <h2>Recent work</h2>
+        <section class="section" id="recent-work">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="section-kicker">Recent work</p>
+                    <h2>Selected projects and case studies.</h2>
+                </div>
+                <p class="section-note">A mix of product engineering, test strategy, analytics tooling, and ML-backed work.</p>
             </div>
             <div class="projects-grid">
                 <a class="project-card" href="project-bloomly.html">
                     <img src="images/CSV.png" alt="CSV data dashboard with spreadsheet import">
-                    <h3>CSV Import Tool</h3>
+                    <div class="project-copy">
+                        <p>Data workflow</p>
+                        <h3>CSV Import Tool</h3>
+                    </div>
                 </a>
                 <a class="project-card" href="Test_coverage.html">
                     <img src="images/testcoverage.jpeg" alt="Automated test coverage dashboard">
-                    <h3>Test Coverage Monitor</h3>
+                    <div class="project-copy">
+                        <p>Quality engineering</p>
+                        <h3>Test Coverage Monitor</h3>
+                    </div>
                 </a>
                 <a class="project-card" href="project-ori.html">
                     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="API integration diagrams on monitors">
-                    <h3>API Dashboard</h3>
+                    <div class="project-copy">
+                        <p>API platform</p>
+                        <h3>API Dashboard</h3>
+                    </div>
                 </a>
                 <a class="project-card" href="project-muse.html">
                     <img src="images/kaggle.png" alt="Kaggle logo and dataset badge">
-                    <h3>Nutrient ML Study</h3>
+                    <div class="project-copy">
+                        <p>ML research</p>
+                        <h3>Nutrient ML Study</h3>
+                    </div>
+                </a>
+                <a class="project-card" href="project-analytics.html">
+                    <img src="images/analytics dashboard.png" alt="Analytics dashboard showing charts and KPI summaries">
+                    <div class="project-copy">
+                        <p>Analytics UX</p>
+                        <h3>Analytics Dashboard</h3>
+                    </div>
                 </a>
             </div>
         </section>
 
         <section class="cta-banner">
-            <h2>Thanks for reading.</h2>
-            <p>If you want to talk about backend, APIs, or interesting problems — reach me here:</p>
+            <div>
+                <p class="section-kicker light-kicker">Contact</p>
+                <h2>Interested in product engineering, frontend architecture, or data-heavy UX?</h2>
+                <p>If you want to talk through a product problem, collaboration, or role, use the links below.</p>
+            </div>
             <div class="cta-links">
                 <div class="cta-icons">
                     <a href="https://github.com/YektaRoustaei" aria-label="GitHub" target="_blank" rel="noreferrer noopener">
@@ -111,10 +162,9 @@
                         </svg>
                     </a>
                 </div>
-                <small>© 2025 Yekta Roustaei — Built with care.</small>
+                <small>© 2025 Yekta Roustaei</small>
             </div>
         </section>
-
     </main>
 
     <div class="modal-overlay" id="contact-modal" aria-hidden="true">

@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrient ML Study — Yekta Roustaei</title>
-    <link rel="stylesheet" href="project-muse.css">
+    <title>Nutrient ML Study - Yekta Roustaei</title>
+    <link rel="stylesheet" href="project-detail.css">
 </head>
 <body>
-    <main class="wrap">
-        <header>
-            <p class="tag">ML nutrition</p>
-            <h1>Nutrient ML Study</h1>
-            <p>Prototype that predicts nutrient deficiencies and delivers personalised nutrition recommendations using the NHANES 2013–2014 dataset.</p>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Primary">
+            <a href="index.html">Back to portfolio</a>
+            <div class="top-links">
+                <a href="about-more.html">About</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+
+        <header class="hero-card">
+            <div class="hero-copy">
+                <p class="eyebrow">ML nutrition</p>
+                <h1>Nutrient ML Study</h1>
+                <p>Prototype that predicts likely nutrient deficiencies and returns personalized recommendations using the NHANES 2013 to 2014 dataset. The work tied model training, API delivery, and an explanatory frontend into one product flow.</p>
+            </div>
+            <div class="hero-facts">
+                <div class="fact-card">
+                    <span class="fact-label">Modeling</span>
+                    <strong>XGBoost, SHAP, feature analysis</strong>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-label">Backend</span>
+                    <strong>FastAPI with documented endpoints</strong>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-label">Frontend</span>
+                    <strong>Next.js interface for risk and recommendation views</strong>
+                </div>
+            </div>
         </header>
 
-        <div class="grid">
-            <img src="images/nutient.png" alt="NHANES dataset visualisation">
-            <div class="card">
+        <section class="section-grid">
+            <figure class="media-panel">
+                <img src="images/nutient.png" alt="NHANES dataset visualisation">
+                <figcaption class="caption">Dataset exploration and feature analysis informed how recommendations were surfaced in the product.</figcaption>
+            </figure>
+            <article class="summary-card">
                 <h2>What I built</h2>
                 <ul>
-                    <li>Trained XGBoost classifiers (Python, Pandas, mutual_info, SHAP) to predict deficiencies such as vitamin B12 and flag at least two health risks using NHANES 2013–2014.</li>
-                    <li>Built a FastAPI backend with documented Swagger endpoints so the frontend could request risk scores, top contributing features, and evidence-based recommendations.</li>
-                    <li>Stored SHAP explanations as .pkl artifacts and exported reporting via matplotlib/seaborn for medical review.</li>
-                    <li>Developed a Next.js/React frontend styled with Tailwind-inspired utilities and custom components (RiskGauge, FeatureImportance, DietaryValidationCard) plus lucide-react icons.</li>
-                    <li>Used an Axios-like service to connect the UI to the FastAPI backend, letting users input their profile data and receive personalised predictions.</li>
+                    <li>Trained models to predict nutrient deficiencies and identify multiple health risks from nutrition data.</li>
+                    <li>Built a FastAPI service that exposed risk scores, top contributing features, and recommendation outputs.</li>
+                    <li>Stored SHAP explanations and exported analysis visuals for review and interpretation.</li>
+                    <li>Developed a Next.js frontend that translated raw model output into clearer product language.</li>
+                    <li>Connected the UI to the backend through a dedicated service layer for profile inputs and predictions.</li>
                 </ul>
-                <a class="back-link" href="index.html">← Back to portfolio</a>
-            </div>
-        </div>
+                <a class="back-link" href="index.html">Back to portfolio</a>
+            </article>
+        </section>
     </main>
 </body>
 </html>

@@ -3,84 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV — Yekta Roustaei</title>
+    <title>CV - Yekta Roustaei</title>
     <link rel="stylesheet" href="cv.css">
 </head>
 <body>
-    <input type="checkbox" id="theme-toggle">
-    <div class="page">
-        <main class="shell">
-            <label for="theme-toggle" class="theme-switch">
-                <span class="sr-only">Toggle between dark and light themes</span>
-            </label>
-            <header>
-                <h1>Yekta Roustaei</h1>
-                <nav class="social" aria-label="social links">
-                    <a href="https://github.com/YektaRoustaei" target="_blank" rel="noreferrer noopener">GitHub</a>
-                    <a href="https://www.linkedin.com/in/yekta-roustaei/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-                </nav>
-                <nav class="pages" aria-label="primary">
-                    <a href="index.html#home">Home</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="cv.html" aria-current="page">CV</a>
-                </nav>
-            </header>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Primary">
+            <a class="brand" href="index.html">Yekta Roustaei</a>
+            <div class="top-links">
+                <a href="about-more.html">About</a>
+                <a href="blog.html">Writing</a>
+            </div>
+        </nav>
 
-            <section class="intro">
-                <p>Software engineer focused on React/Next.js, Python services, and keeping products welcoming, accessible, and fast.</p>
-            </section>
+        <header class="hero-card">
+            <p class="eyebrow">Curriculum vitae</p>
+            <h1>Software engineer working across product interfaces, APIs, testing, and ML-informed systems.</h1>
+            <p class="lead">React, Next.js, TypeScript, Python, SQL, GCP, quality engineering, analytics tooling.</p>
+        </header>
 
-            <section class="section-group" aria-labelledby="experience-heading">
-                <h2 id="experience-heading">Experience</h2>
+        <section class="resume-layout">
+            <aside class="side-card">
                 <div>
-                    <p><strong>AmBue Group · Senior Software Developer</strong> — Nov 2024 – Present · 🇬🇧 Hybrid</p>
-                    <ul>
-                        <li>Promoted from Software Developer to own delivery, architecture, and lifecycle of an LLM-powered retrofit recommendation platform.</li>
-                        <li>Manage core APIs across performance, documentation, versioning, and security while translating stakeholder goals into prioritised roadmaps.</li>
-                        <li>Design ML pipelines on GCP, automating Random Forest training and batch prediction with Python + scikit-learn stored in Cloud SQL.</li>
-                        <li>Deploy Cloud Functions to orchestrate daily training/prediction runs and keep datasets dependable.</li>
-                        <li>Architect Next.js applications with 90%+ coverage and lead CI/CD automation plus migrations to Python in collaboration with AI/ML, data, product, and engineering teams.</li>
+                    <p class="eyebrow">Core skills</p>
+                    <ul class="skill-list">
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Playwright</li>
+                        <li>Jest</li>
+                        <li>GCP</li>
+                        <li>API design</li>
+                        <li>ML pipelines</li>
                     </ul>
                 </div>
                 <div>
-                    <p><strong>Douran Group · Software Engineer</strong> — Apr 2022 – Aug 2023 · Remote</p>
-                    <ul>
-                        <li>Maintained Vue and Laravel apps, fixing hot paths and lifting Lighthouse scores across key flows.</li>
-                        <li>Expanded APIs, added caching, and documented endpoints so frontend/ backend collaboration stayed easy.</li>
-                        <li>Introduced Docker-based dev environments and improved test coverage with Jest + Playwright.</li>
-                    </ul>
+                    <p class="eyebrow">Contact</p>
+                    <p><a href="mailto:yektaroustaei@gmail.com">yektaroustaei@gmail.com</a></p>
+                    <p><a href="https://github.com/YektaRoustaei" target="_blank" rel="noreferrer noopener">GitHub</a></p>
+                    <p><a href="https://www.linkedin.com/in/yekta-roustaei/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
                 </div>
-                <div>
-                    <p><strong>Freelance + Personal Projects</strong> — Ongoing</p>
-                    <ul>
-                        <li>Prototype ML-powered UI helpers using React, Next.js, and Python notebooks backed by Kaggle datasets.</li>
-                        <li>Write short notes on performance, accessibility, and API resilience to share with other devs.</li>
-                    </ul>
-                </div>
-            </section>
+            </aside>
 
-            <section aria-labelledby="skills-heading">
-                <h2 id="skills-heading">Skills / Technologies</h2>
-                <ul>
-                    <li>TypeScript · React · Next.js · Vue</li>
-                    <li>Node.js · Express · Laravel</li>
-                    <li>REST · GraphQL · WebSockets</li>
-                    <li>Storybook · Playwright · Jest · Vitest</li>
-                    <li>AWS · Vercel · Docker · GitHub Actions</li>
-                </ul>
-            </section>
+            <div class="main-column">
+                <section class="section-card">
+                    <div class="section-head">
+                        <p class="eyebrow">Experience</p>
+                        <h2>Selected roles</h2>
+                    </div>
+                    <article class="role-card">
+                        <div class="role-head">
+                            <div>
+                                <h3>AmBue Group</h3>
+                                <p class="role-title">Senior Software Developer</p>
+                            </div>
+                            <span>Nov 2024 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Lead architecture and delivery for an LLM-powered retrofit recommendation platform.</li>
+                            <li>Own core APIs across versioning, documentation, performance, and security expectations.</li>
+                            <li>Design GCP-based ML pipelines using Python and scikit-learn with Cloud SQL storage.</li>
+                            <li>Drive Next.js application quality with high coverage and stronger CI/CD guardrails.</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-head">
+                            <div>
+                                <h3>Douran Group</h3>
+                                <p class="role-title">Software Engineer</p>
+                            </div>
+                            <span>Apr 2022 - Aug 2023</span>
+                        </div>
+                        <ul>
+                            <li>Improved Vue and Laravel applications across performance, stability, and onboarding.</li>
+                            <li>Extended backend APIs and caching to support multiple product surfaces.</li>
+                            <li>Introduced better test coverage and local development automation.</li>
+                        </ul>
+                    </article>
+                </section>
 
-            <section aria-labelledby="education-heading">
-                <h2 id="education-heading">Education</h2>
-                <p>MSc Software Engineering — University of Leicester (Distinction)</p>
-                <p>BSc Computer Science — University of Birmingham</p>
-            </section>
-
-            <section aria-labelledby="contact">
-                <h2 id="contact">Contact</h2>
-                <p>Email <a href="mailto:yektaroustaei@gmail.com">yektaroustaei@gmail.com</a> for the full PDF CV or speaking engagements.</p>
-            </section>
-        </main>
-    </div>
+                <section class="section-card dual-card">
+                    <article>
+                        <div class="section-head">
+                            <p class="eyebrow">Education</p>
+                            <h2>Academic background</h2>
+                        </div>
+                        <p><strong>MSc Software Engineering</strong><br>University of Leicester, Distinction</p>
+                    </article>
+                    <article>
+                        <div class="section-head">
+                            <p class="eyebrow">Focus</p>
+                            <h2>What I work on</h2>
+                        </div>
+                        <p>Frontend systems, analytics dashboards, API-heavy workflows, validation experiences, and testing strategy for production products.</p>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

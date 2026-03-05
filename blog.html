@@ -3,66 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Yekta Roustaei</title>
+    <title>Writing - Yekta Roustaei</title>
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-    <input type="checkbox" id="theme-toggle">
-    <div class="page">
-        <main class="shell">
-            <label for="theme-toggle" class="theme-switch">
-                <span class="sr-only">Toggle between dark and light themes</span>
-            </label>
-            <header>
-                <h1>Yekta Roustaei</h1>
-                <nav class="social" aria-label="social links">
-                    <a href="https://github.com/YektaRoustaei" target="_blank" rel="noreferrer noopener">GitHub</a>
-                    <a href="https://www.linkedin.com/in/yekta-roustaei/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-                </nav>
-                <nav class="pages" aria-label="primary">
-                    <a href="index.html#home">Home</a>
-                    <a href="blog.html" aria-current="page">Blog</a>
-                    <a href="cv.html">CV</a>
-                </nav>
-            </header>
+    <main class="page-shell">
+        <nav class="topbar" aria-label="Primary">
+            <a class="brand" href="index.html">Yekta Roustaei</a>
+            <div class="top-links">
+                <a href="about-more.html">About</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
 
-            <section class="intro">
-                <p>Short notes from a software developer on backend flow, performance guardrails, and keeping data pipelines friendly for the people using them.</p>
-            </section>
+        <header class="hero-card">
+            <p class="eyebrow">Writing</p>
+            <h1>Notes on shipping products with better frontend structure, backend reliability, and data sense.</h1>
+            <p class="lead">Short writing from a software engineer who spends most days moving between UI detail, API constraints, testing discipline, and product analytics.</p>
+        </header>
 
-            <section id="blog" aria-labelledby="blog-heading">
-                <h2 id="blog-heading">Latest Writing</h2>
-                <article>
-                    <h3>How This Software Engineer Turns Data Into Technical Decisions</h3>
-                    <p>In a world where engineering choices have to be precise, data-driven, and scalable, this backend-focused software engineer in the UK shows how to blend hands-on delivery with a research mindset. At Ambue Group—an Innovate UK project for sustainable home improvements—they sync records for 100k+ dwellings, pipe ML outputs into a Next.js interface, and guide interface logic so recommendations reflect live model predictions.</p>
-                    <p>Their earlier work at Douran Group paired React accessibility improvements with resilient Laravel services. That full-stack balance continued at Leicester University, where they built a Laravel job-recommendation system powered by a React API and SQL database, complete with robust unit tests and agile cadences.</p>
-                    <p>Their analytical streak means product debates rarely rely on gut instinct alone. They run Python-based analysis (Pandas, scikit-learn) to explore engagement data, tighten hypotheses, and highlight the metrics that should guide API or workflow changes.</p>
-                    <p>They also keep sharing knowledge. As a volunteer lecturer at Ada National College for Digital Skills, they translate complex programming concepts for learners aged 14–21. That habit of documenting, testing, and communicating carries back into the day job, where it keeps teams aligned while they ship APIs, tune databases, and connect research workflows to UX implementations. If your team needs someone who can move from infrastructure to insight without dropping the thread, their track record at Ambue and beyond proves they can lead the stack end-to-end.</p>
-                    <p><a href="#">Read the full note →</a></p>
-                </article>
-                <article>
-                    <h3>Backend Logic</h3>
-                    <p>I build Python backend features, handle data flows, and make APIs dependable.</p>
-                </article>
-                <article>
-                    <h3>About me</h3>
-                    <p>I’m a software engineer who likes turning complex ideas into simple, usable interfaces.</p>
-                    <p>My favorite tools are React, Next.js, and TypeScript.</p>
-                    <p>I enjoy designing component systems, collaborating with product teams, and improving performance in small, practical steps.</p>
-                    <p>When I’m not coding, I explore photography or experiment with design ideas.</p>
-                    <ul>
-                        <li>ML outputs</li>
-                        <li>API and SQL database</li>
-                        <li>Python-based analysis (Pandas, scikit-learn)</li>
-                    </ul>
-                </article>
-            </section>
+        <section class="post-grid">
+            <article class="post-card featured">
+                <p class="post-kicker">Featured note</p>
+                <h2>How data becomes a technical decision instead of a dashboard decoration</h2>
+                <p>Engineering teams often collect more metrics than they can use. The useful shift happens when analytics starts shaping interface decisions, API priorities, and the order in which quality work gets funded.</p>
+                <p>In practice that means pairing product questions with observable behaviors: where users drop out, which screens trigger retries, what data comes back incomplete, and which workflows need stronger defaults because the model output is noisy.</p>
+                <p>The same approach carries into delivery. Metrics are not there to make slides look convincing. They should change implementation decisions, reveal risk earlier, and make tradeoffs easier to defend.</p>
+                <a class="inline-link" href="mailto:yektaroustaei@gmail.com">Ask for the full article</a>
+            </article>
 
-            <section class="contact" aria-labelledby="contact">
-                <h2 id="contact">Contact</h2>
-                <p>Have a topic idea or question? Email <a href="mailto:yektaroustaei@gmail.com">yektaroustaei@gmail.com</a>.</p>
-            </section>
-        </main>
-    </div>
+            <article class="post-card">
+                <p class="post-kicker">Backend</p>
+                <h2>What dependable backend logic feels like from the UI side</h2>
+                <p>Reliable APIs do more than return the right payload. They make validation clearer, keep retries understandable, and reduce the amount of defensive code the frontend has to carry.</p>
+            </article>
+
+            <article class="post-card">
+                <p class="post-kicker">Frontend systems</p>
+                <h2>Why calm interfaces usually come from strict engineering choices</h2>
+                <p>Clear UI is rarely accidental. It often comes from typed contracts, shared components, explicit empty states, and teams being willing to remove unnecessary options.</p>
+            </article>
+        </section>
+
+        <section class="contact-card">
+            <p class="eyebrow">Contact</p>
+            <h2>Want to talk about a topic, article, or project?</h2>
+            <p>Email <a class="inline-link" href="mailto:yektaroustaei@gmail.com">yektaroustaei@gmail.com</a>.</p>
+        </section>
+    </main>
 </body>
 </html>
